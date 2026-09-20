@@ -1,4 +1,3 @@
-/* Сброс базовых стилей */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
@@ -15,7 +14,6 @@ header, footer {
     color: white;
 }
 
-/* Центрируем карточку на странице */
 main {
     flex: 1;
     display: flex;
@@ -24,23 +22,18 @@ main {
     padding: 20px;
 }
 
-/* Стили карточки */
 .card {
     max-width: 400px;
     width: 100%;
     
-    /* Требование: margin с комментарием */
     margin: 20px auto; /* Внешний отступ от других элементов */
     
-    /* Требование: padding с комментарием */
     padding: 30px; /* Внутренний отступ от краев карточки */
     
-    /* Требование: border с комментарием */
     border: 2px solid #ccc; /* Рамка вокруг карточки */
     
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     
-    /* Требование: Flexbox для выравнивания контента внутри */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,7 +62,6 @@ main {
     text-decoration: underline;
 }
 
-/* Требование: Адаптивность */
 @media (max-width: 375px) {
     .card {
         padding: 15px; /* Уменьшаем отступы на мобильных */

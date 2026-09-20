@@ -18,24 +18,19 @@
   <main>
       <main>
     <div class="card bg-white text-center rounded-xl">
-      <!-- Аватар -->
       <img src="IMG_4152.jpg" alt="photo of Tomiris" width="200" height="200" class="avatar">
       
-      <!-- Имя -->
       <h2>Muratova Tomiris</h2>
       
-      <!-- Короткое био (2-3 предложения) -->
       <p class="bio">
         I'm a KBTU student learning web development. I'm taking the IWaMAD course to build real projects and grow a portfolio. 
       </p>
       
-      <!-- Минимум 2 ссылки (Email и GitHub) -->
       <div class="links">
         <a href="mailto:t_muratova@kbtu.kz">Email Me</a>
         <a href="https://github.com/" target="_blank">GitHub</a>
       </div>
 
-      <!-- Кнопка для интерактива (Practice 2) -->
       <button id="likeBtn">Like</button>
     </div>
   </main>
@@ -49,15 +44,12 @@
   </footer>
 
   <script>
-    // Требование: document.querySelector и addEventListener
     const likeBtn = document.querySelector('#likeBtn');
     const card = document.querySelector('.card');
 
     likeBtn.addEventListener('click', () => {
-        // Требование: toggle liked state
         card.classList.toggle('liked');
         
-        // Требование: визуальное изменение (текст кнопки)
         if (card.classList.contains('liked')) {
             likeBtn.textContent = 'Liked! ❤️';
         } else {
