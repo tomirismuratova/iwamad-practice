@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    max-width: 400px;
+    width: 100%;
+    
+    margin: 20px auto; /* Внешний отступ от других элементов */
+    
+    padding: 30px; /* Внутренний отступ от краев карточки */
+    
+    border: 2px solid #ccc; /* Рамка вокруг карточки */
+    
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bio {
+    color: #555;
+    line-height: 1.5;
+}
+
+.links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 375px) {
+    .card {
+        padding: 15px; /* Уменьшаем отступы на мобильных */
+    }
+}
+
+@media (min-width: 1200px) {
+    .card {
+        max-width: 500px; /* Карточка чуть шире на десктопе */
+    }
+}
+
+.card.liked {
+    background-color: #ffe6e6; /* Меняем цвет фона при лайке */
+    border-color: #ff4d4d;
+}
+
+#likeBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    margin-top: 10px;
+}

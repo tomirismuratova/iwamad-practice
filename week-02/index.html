@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal profile page of Tomiris — aspiring web developer, IWaMAD student.">
+  <title>Muratova Tomiris | Profile</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Muratova Tomiris</h1>
+    <p>Aspiring Web Developer</p>
+  </header>
+
+  <main>
+      <main>
+    <div class="card bg-white text-center rounded-xl">
+      <img src="IMG_4152.jpg" alt="photo of Tomiris" width="200" height="200" class="avatar">
+      
+      <h2>Muratova Tomiris</h2>
+      
+      <p class="bio">
+        I'm a KBTU student learning web development. I'm taking the IWaMAD course to build real projects and grow a portfolio. 
+      </p>
+      
+      <div class="links">
+        <a href="mailto:t_muratova@kbtu.kz">Email Me</a>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+      </div>
+
+      <button id="likeBtn">Like</button>
+    </div>
+  </main>
+
+  </main>
+
+  <footer>
+    <p>2026 Muratova Tomiris</p>
+    <p>2026 Muratova Tomiris - Week 2</p>
+
+  </footer>
+
+  <script>
+    const likeBtn = document.querySelector('#likeBtn');
+    const card = document.querySelector('.card');
+
+    likeBtn.addEventListener('click', () => {
+        card.classList.toggle('liked');
+        
+        if (card.classList.contains('liked')) {
+            likeBtn.textContent = 'Liked! ❤️';
+        } else {
+            likeBtn.textContent = 'Like';
+        }
+    });
+</script>
+
+</body>
+</html>
