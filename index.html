@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal profile page of Tomiris — aspiring web developer, IWaMAD student.">
+  <title>Muratova Tomiris | Profile</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Muratova Tomiris</h1>
+    <p>Aspiring Web Developer</p>
+  </header>
+
+  <main>
+      <main>
+    <div class="card bg-white text-center rounded-xl">
+      <!-- Аватар -->
+      <img src="IMG_4152.jpg" alt="photo of Tomiris" width="200" height="200" class="avatar">
+      
+      <!-- Имя -->
+      <h2>Muratova Tomiris</h2>
+      
+      <!-- Короткое био (2-3 предложения) -->
+      <p class="bio">
+        I'm a KBTU student learning web development. I'm taking the IWaMAD course to build real projects and grow a portfolio. 
+      </p>
+      
+      <!-- Минимум 2 ссылки (Email и GitHub) -->
+      <div class="links">
+        <a href="mailto:t_muratova@kbtu.kz">Email Me</a>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+      </div>
+
+      <!-- Кнопка для интерактива (Practice 2) -->
+      <button id="likeBtn">Like</button>
+    </div>
+  </main>
+
+  </main>
+
+  <footer>
+    <p>2026 Muratova Tomiris</p>
+    <p>2026 Muratova Tomiris - Week 2</p>
+
+  </footer>
+
+  <script>
+    // Требование: document.querySelector и addEventListener
+    const likeBtn = document.querySelector('#likeBtn');
+    const card = document.querySelector('.card');
+
+    likeBtn.addEventListener('click', () => {
+        // Требование: toggle liked state
+        card.classList.toggle('liked');
+        
+        // Требование: визуальное изменение (текст кнопки)
+        if (card.classList.contains('liked')) {
+            likeBtn.textContent = 'Liked! ❤️';
+        } else {
+            likeBtn.textContent = 'Like';
+        }
+    });
+</script>
+
+</body>
+</html>
