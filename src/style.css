@@ -111,3 +111,18 @@ main {
 header h1 {
     color: white;
 }
+
+nav {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}

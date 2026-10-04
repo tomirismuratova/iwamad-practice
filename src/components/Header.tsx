@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router'
+
 type HeaderProps = {
   name: string
   role: string
@@ -8,6 +10,20 @@ function Header({ name, role }: HeaderProps) {
     <header>
       <h1>{name}</h1>
       <p>{role}</p>
+
+      <nav>
+        <NavLink to="/" end>
+          Home
+        </NavLink>
+
+        <NavLink to="/skills">
+          Skills
+        </NavLink>
+
+        <NavLink to="/contact">
+          Contact
+        </NavLink>
+      </nav>
     </header>
   )
 }
