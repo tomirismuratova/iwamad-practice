@@ -1,3 +1,4 @@
+/* Сброс базовых стилей */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
@@ -22,18 +23,20 @@ main {
     padding: 20px;
 }
 
+/* Стили карточки */
 .card {
     max-width: 400px;
     width: 100%;
-    
+
+
     margin: 20px auto; /* Внешний отступ от других элементов */
-    
+
     padding: 30px; /* Внутренний отступ от краев карточки */
-    
+
     border: 2px solid #ccc; /* Рамка вокруг карточки */
-    
+
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,6 +65,7 @@ main {
     text-decoration: underline;
 }
 
+
 @media (max-width: 375px) {
     .card {
         padding: 15px; /* Уменьшаем отступы на мобильных */
@@ -88,4 +92,37 @@ main {
     background-color: #007bff;
     color: white;
     margin-top: 10px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.skill-badge {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #f8f8f8;
+}
+
+header h1 {
+    color: white;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
 }
