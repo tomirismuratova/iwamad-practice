@@ -1,5 +1,7 @@
+
 import SkillBadge, { type Skill } from './SkillBadge'
 import LikeButton from './LikeButton'
+import Card from './ui/Card'
 
 type ProfileCardProps = {
   name: string
@@ -20,7 +22,7 @@ function ProfileCard({
 }: ProfileCardProps) {
   return (
     <main>
-      <div className="card">
+      <Card>
         <img
           src={avatarUrl}
           alt={`Photo of ${name}`}
@@ -52,7 +54,7 @@ function ProfileCard({
         </div>
 
         <LikeButton />
-      </div>
+      </Card>
     </main>
   )
 }
