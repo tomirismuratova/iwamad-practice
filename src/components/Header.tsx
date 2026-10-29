@@ -46,6 +46,10 @@ function Header({ name, role }: HeaderProps) {
         <NavLink to="/register">
           Register
         </NavLink>
+
+        <NavLink to="/events">
+          Events
+        </NavLink>
       </nav>
     </header>
   )
